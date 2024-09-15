@@ -15,7 +15,7 @@ def main():
         with open(f'metadata/{pkg}.yml') as f:
             metadata = ruamel.yaml.YAML().load(f)
 
-        metadata['ArchivePolicy'] = 1
+        metadata['ArchivePolicy'] = 0
         metadata['AutoUpdateMode'] = 'None'
         metadata['UpdateCheckMode'] = 'None'
 
