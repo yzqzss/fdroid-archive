@@ -6,7 +6,7 @@ def get_pkgs():
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument('pkg', help='Package to archive', nargs='+')
     args = arg_parser.parse_args()
-    return args.pkgs
+    return args.pkg
 
 def main():
     pkgs = get_pkgs()
